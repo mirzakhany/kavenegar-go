@@ -18,9 +18,10 @@ type Message struct {
 
 //MessageSendParam ...
 type MessageSendParam struct {
-	Date    time.Time
-	Type    []MessageSendType
-	LocalID []string
+	Date           time.Time
+	Type           []MessageSendType
+	LocalMessageID []string
+	LocalID        string
 }
 
 //MessageResult ...

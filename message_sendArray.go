@@ -17,8 +17,8 @@ func (m *MessageService) SendArray(sender []string, receptor []string, message [
 		if params.Type != nil {
 			v.Set("type",  ToJson(params.Type))
 		}
-		if params.LocalID != nil {
-			v.Set("localid",  ToJson(params.LocalID))
+		if params.LocalMessageID != nil {
+			v.Set("LocalMessageid",  ToJson(params.LocalID))
 		}
 	}
 	return m.CreateSendArray(v)

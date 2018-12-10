@@ -16,7 +16,7 @@ func (m *MessageService) Send(sender string, receptor []string, message string, 
 		if params.Type != nil {
 			v.Set("type", ToString(params.Type))
 		}
-		if params.LocalID != nil {
+		if params.LocalID != "" {
 			v.Set("localid", ToString(params.LocalID))
 		}
 	}
